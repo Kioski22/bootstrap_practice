@@ -16,12 +16,17 @@ require ('db.php');
     <style>
         body{
             font-family: Poppins, Helvetica, sans-serif !important;
-            margin: auto;
-            padding: 0%;
+         
         }
 
         input{
             max-width: fit-content;
+        }
+        #LoginForm{
+            background-color: burlywood;
+            margin-left: 500px;
+            padding: 200px;
+            border-radius: 20px !important;
         }
     </style>
 </head>
@@ -37,13 +42,13 @@ require ('db.php');
     <div class="container">
         <div class="row">
             <div class="col-11 col-lg-6 d-flex justify-content-center">
-                <form method="post" action="login_process.php" class="w-100">
+                <form method="post" action="login_process.php" class="w-60 mt-5 ml-3  text-white rounded-2 " id="LoginForm">
                     <h1 class="text-center">Login</h1>
                     <label for="username">Username</label>
                     <input type="text" placeholder="Juan123" id="username" name="username" class="form-control">
 
                     <label for="password" class="label">Password</label>
-                    <input type="password" id="password" name="password" class="form-control">
+                    <input type="password" id="password" name="password" placeholder="*********" class="form-control">
 
                     <button class="btn btn-success mt-3" type="submit">Login</button>
                 </form>
